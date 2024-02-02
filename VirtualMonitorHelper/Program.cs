@@ -58,10 +58,10 @@
             // Set up the NotifyIcon.
             notifyIcon.ContextMenuStrip = contextMenuStrip;
             notifyIcon.Visible = true;
-            notifyIcon.Text = "Virtual Monitor Helper";
+            notifyIcon.Text = "Virtual Monitor Helper for MTT";
 
             // Your existing logic goes here...
-            string targetDeviceString = "IddSampleDriver Device";
+            string targetDeviceString = "IddSampleDriver Device HDR";
             DISPLAY_DEVICE displayDevice = new DISPLAY_DEVICE();
             displayDevice.cb = (uint)Marshal.SizeOf(displayDevice);
             bool foundDevice = false;
@@ -182,7 +182,7 @@
         {
             Console.WriteLine("The display settings changed.  Checking to see if Display Name is the same.");
 
-            string targetDeviceString = "IddSampleDriver Device";
+            string targetDeviceString = "IddSampleDriver Device HDR";
             DISPLAY_DEVICE displayDevice = new DISPLAY_DEVICE();
             displayDevice.cb = (uint)Marshal.SizeOf(displayDevice);
             bool foundDevice = false;
